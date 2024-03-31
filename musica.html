@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Música Total</title>
+<style>
+/* Estilos CSS */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #141414;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.header {
+  background-color: #141414;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #e50914;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #d10813;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.featured-content {
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.featured-content h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.featured-content p {
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+
+  .featured-content {
+    padding: 20px;
+  }
+
+  .featured-content h2 {
+    font-size: 24px;
+  }
+
+  .featured-content p {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para los logos de las páginas de música */
+.music-links {
+  text-align: center;
+}
+
+.music-link {
+  display: inline-block;
+  margin: 20px;
+}
+
+.music-logo {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.music-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para los botones de navegación */
+.nav-buttons {
+  display: flex; /* Para que los botones estén en línea */
+  align-items: center; /* Para alinear verticalmente los botones */
+}
+
+.nav-button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Espacio entre los botones */
+}
+
+.nav-button:hover {
+  background-color: #d10813;
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>Música Total</h1>
+</header>
+
+<nav class="navbar">
+  <div class="nav-buttons">
+    <a href="inicio.html" class="nav-button">Inicio</a>
+  </div>
+</nav>
+
+<div class="main-content">
+  <div class="featured-content">
+    <h2>Descubre el mundo de la música</h2>
+    <p>¡Encuentra los mejores éxitos de rock, pop, electrónica, hip hop y más!</p>
+    <p>Disfruta de la mejor selección de música para todos los gustos.</p>
+  </div>
+  
+  <!-- Logos de páginas de música -->
+  <div class="music-links">
+    <div class="music-link">
+      <a href="https://www.spotify.com" target="_blank">
+        <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png" alt="Spotify" class="music-logo">
+        <div class="music-name">Spotify</div>
+      </a>
+    </div>
+
+    <div class="music-link">
+      <a href="https://www.apple.com/music/" target="_blank">
+        <img src="https://th.bing.com/th?id=OIP.mU4aWiTHoqPTMn_jVr1LhAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Apple Music" class="music-logo">
+        <div class="music-name">Apple Music</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2024 Música Total. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

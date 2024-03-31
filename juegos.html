@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juegos Total</title>
+<style>
+/* Estilos CSS */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #141414;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.header {
+  background-color: #141414;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #e50914;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; /* Ajuste en el padding */
+  font-weight: bold;
+}
+
+.navbar a:first-child {
+  margin-right: auto; /* Ajuste para alinear el primer enlace a la izquierda */
+}
+
+.navbar a:hover {
+  background-color: #d10813;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.featured-content {
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.featured-content h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.featured-content p {
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para los logos y nombres de las tiendas */
+.store-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.store-link {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.store-logo {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.store-logo:hover {
+  transform: scale(1.05);
+}
+
+.store-name {
+  margin-top: 5px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.store-link:hover .store-name {
+  color: #e50914; /* Cambiar el color al pasar el cursor */
+}
+
+.store-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Añadir un fondo semi-transparente */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.store-link:hover::before {
+  opacity: 1; /* Hacer el fondo visible al pasar el cursor */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 10px;
+  }
+  .navbar a {
+    padding: 10px;
+  }
+  .store-container {
+    justify-content: flex-start;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>Juegos Total</h1>
+</header>
+
+<nav class="navbar">
+  <a href="inicio.html">Inicio</a>
+</nav>
+
+<div class="main-content">
+  <div class="featured-content">
+    <h2>Explora el mundo de los juegos</h2>
+    <p>¡Encuentra los mejores juegos de aventura, puzzle, acción, estrategia y más!</p>
+    <p>Disfruta de una amplia selección de juegos para todos los gustos.</p>
+  </div>
+  
+  <!-- Contenido de Juegos -->
+  <div class="store-container games-container">
+    <a href="https://store.steampowered.com/" target="_blank" class="store-link">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/1200px-Steam_icon_logo.svg.png" alt="Steam" class="store-logo">
+      <div class="store-name">Steam</div>
+    </a>
+    <a href="https://store.epicgames.com/es-ES/" target="_blank" class="store-link">
+      <img src="https://th.bing.com/th?id=OIP.AM2VAPCGZQHIrKlwhESjjAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt = "Epic games" class="store-logo">
+      <div class="store-name">Epic games</div>
+    </a>
+    
+  </div>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2024 Juegos Total - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

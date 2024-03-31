@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series Total</title>
+<style>
+/* Estilos CSS */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #141414;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.header {
+  background-color: #141414;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #e50914;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.navbar a:first-child {
+  margin-right: auto; /* Ajuste para alinear el primer enlace a la izquierda */
+}
+
+.navbar a:hover {
+  background-color: #d10813;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.featured-content {
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.featured-content h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.featured-content p {
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.upload-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.upload-button button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button button:hover {
+  background-color: #d10813;
+}
+
+.store-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.store-link {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.store-logo {
+  width: 100px; /* Tamaño reducido del logo */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.store-logo:hover {
+  transform: scale(1.05);
+}
+
+.store-name {
+  margin-top: 5px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.store-link:hover .store-name {
+  color: #e50914; /* Cambiar el color al pasar el cursor */
+}
+
+.store-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Añadir un fondo semi-transparente */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.store-link:hover::before {
+  opacity: 1; /* Hacer el fondo visible al pasar el cursor */
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+
+  .featured-content {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>Series Total</h1>
+</header>
+
+<nav class="navbar">
+  <a href="inicio.html">Inicio</a>
+</nav>
+
+<div class="main-content">
+  <div class="featured-content">
+    <h2>Explora el mundo de las series</h2>
+    <p>¡Encuentra las mejores series de drama, comedia, acción, ciencia ficción y más!</p>
+    <p>Disfruta de una amplia selección de series para todos los gustos.</p>
+  </div>
+</div>
+
+<div class="store-container">
+  <!-- Agregar logos de páginas de películas -->
+  <a href="https://www.netflix.com" target="_blank" class="store-link">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="store-logo">
+    <div class="store-name">Netflix</div>
+  </a>
+  <a href="https://www.primevideo.com" target="_blank" class="store-link">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Amazon.com-Logo.svg" alt="Amazon Prime Video" class="store-logo">
+    <div class="store-name">Amazon Prime Video</div>
+  </a>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2024 Series Total. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

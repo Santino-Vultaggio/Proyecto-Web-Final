@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar Sesión</title>
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #141414;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.header {
+  background-color: #141414;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 90%; /* Cambio de ancho */
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.login-container h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+.login-container input[type="submit"] {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #d10813;
+}
+
+.register-button {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.register-button a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-button a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+  .login-container {
+    max-width: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>Iniciar Sesión</h1>
+</header>
+
+<div class="login-container">
+  <h2>Iniciar Sesión</h2>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Nombre de usuario" required>
+    <input type="password" id="password" placeholder="Contraseña" required>
+    <input type="submit" value="Iniciar Sesión">
+  </form>
+  <div class="register-button">
+    <a href="registrarse.html">¿No tienes cuenta? Regístrate aquí</a>
+  </div>
+</div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita el envío del formulario por defecto
+  
+  // Obtiene los valores de usuario y contraseña
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  // Verifica si el usuario y la contraseña son correctos
+  if (username === "Santino" && password === "Vultaggio") {
+    // Redirecciona a la página de inicio
+    window.location.href = "inicio.html";
+  } else {
+    alert("Nombre de usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
+  }
+});
+</script>
+
+</body>
+</html>
